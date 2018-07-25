@@ -12,9 +12,8 @@
 }
 
 .title-feauters {
-padding-top: 106px;
-
-  }
+  margin-top: 106px;
+}
 
 .title::after {
   content: "";
@@ -30,10 +29,7 @@ padding-top: 106px;
 .card-image {
   height: 322px;
   width: 255px;
-  
- 
 }
-
 
 .card {
   width: 255px;
@@ -41,14 +37,27 @@ padding-top: 106px;
   float: left;
   margin-right: 30px;
   margin-bottom: 30px;
-  
-  
+  position: relative;
+ 
+}
+.card:hover .card-image {
+  cursor: pointer;
   
 }
 
-.image, .card-name {
-position: absolute;
+.card:hover .card-name {
+  background-color: #1abc9c;
+  cursor: pointer;
+  transition: 0.5s;
 }
+
+.card:hover .price {
+  background-color: #7fd9c7;
+  
+}
+
+
+
 
 .card:nth-child(n + 6) {
   margin-bottom: 0;
@@ -67,9 +76,10 @@ position: absolute;
   height: 40px;
   width: 255px;
   bottom: 41px;
-  
-  
+  position: absolute;
+  top: 281px;
 }
+
 
 .name {
   color: white;
@@ -78,9 +88,13 @@ position: absolute;
   font-weight: 900;
   text-transform: uppercase;
   float: left;
-  padding: 14px 50px 15px 14px;
+  position: absolute;
+  padding: 10px 50px 8px 15px;
+  transition: 0.5s;
   
 }
+
+
 
 .price {
   color: white;
@@ -91,15 +105,14 @@ position: absolute;
   background-color: #8c8c8c;
   width: 55px;
   height: 40px;
-  text-align: center;
   float: right;
+  padding: 10px 11px;
+  transition: 0.5s;
 }
-
 
 .price::before {
   content: '\0024';
   display: block;
   float: left;
- 
-
 }
+
